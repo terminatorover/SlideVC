@@ -14,6 +14,10 @@
 		A1AAD1191A1C54C9005E73F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1AAD1181A1C54C9005E73F1 /* Images.xcassets */; };
 		A1AAD11C1A1C54C9005E73F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AAD11A1A1C54C9005E73F1 /* LaunchScreen.xib */; };
 		A1AAD1281A1C54C9005E73F1 /* RGSliderMoveControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD1271A1C54C9005E73F1 /* RGSliderMoveControllerTests.m */; };
+		A1AAD1331A1C556B005E73F1 /* RGSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD1321A1C556B005E73F1 /* RGSliderViewController.m */; };
+		A1AAD1361A1C5D61005E73F1 /* RGLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD1351A1C5D61005E73F1 /* RGLeftViewController.m */; };
+		A1AAD1391A1C5D75005E73F1 /* RGFirstTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD1381A1C5D75005E73F1 /* RGFirstTopViewController.m */; };
+		A1AAD13C1A1C5D7F005E73F1 /* RGSecondTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD13B1A1C5D7F005E73F1 /* RGSecondTopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		A1AAD1211A1C54C9005E73F1 /* RGSliderMoveControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGSliderMoveControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AAD1261A1C54C9005E73F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1AAD1271A1C54C9005E73F1 /* RGSliderMoveControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGSliderMoveControllerTests.m; sourceTree = "<group>"; };
+		A1AAD1311A1C556B005E73F1 /* RGSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGSliderViewController.h; sourceTree = "<group>"; };
+		A1AAD1321A1C556B005E73F1 /* RGSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGSliderViewController.m; sourceTree = "<group>"; };
+		A1AAD1341A1C5D61005E73F1 /* RGLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGLeftViewController.h; sourceTree = "<group>"; };
+		A1AAD1351A1C5D61005E73F1 /* RGLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGLeftViewController.m; sourceTree = "<group>"; };
+		A1AAD1371A1C5D75005E73F1 /* RGFirstTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGFirstTopViewController.h; sourceTree = "<group>"; };
+		A1AAD1381A1C5D75005E73F1 /* RGFirstTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGFirstTopViewController.m; sourceTree = "<group>"; };
+		A1AAD13A1A1C5D7F005E73F1 /* RGSecondTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGSecondTopViewController.h; sourceTree = "<group>"; };
+		A1AAD13B1A1C5D7F005E73F1 /* RGSecondTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGSecondTopViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,14 @@
 			children = (
 				A1AAD10F1A1C54C9005E73F1 /* AppDelegate.h */,
 				A1AAD1101A1C54C9005E73F1 /* AppDelegate.m */,
+				A1AAD1341A1C5D61005E73F1 /* RGLeftViewController.h */,
+				A1AAD1351A1C5D61005E73F1 /* RGLeftViewController.m */,
+				A1AAD1371A1C5D75005E73F1 /* RGFirstTopViewController.h */,
+				A1AAD1381A1C5D75005E73F1 /* RGFirstTopViewController.m */,
+				A1AAD13A1A1C5D7F005E73F1 /* RGSecondTopViewController.h */,
+				A1AAD13B1A1C5D7F005E73F1 /* RGSecondTopViewController.m */,
+				A1AAD1311A1C556B005E73F1 /* RGSliderViewController.h */,
+				A1AAD1321A1C556B005E73F1 /* RGSliderViewController.m */,
 				A1AAD1121A1C54C9005E73F1 /* ViewController.h */,
 				A1AAD1131A1C54C9005E73F1 /* ViewController.m */,
 				A1AAD1151A1C54C9005E73F1 /* Main.storyboard */,
@@ -219,8 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AAD1391A1C5D75005E73F1 /* RGFirstTopViewController.m in Sources */,
 				A1AAD1141A1C54C9005E73F1 /* ViewController.m in Sources */,
 				A1AAD1111A1C54C9005E73F1 /* AppDelegate.m in Sources */,
+				A1AAD1331A1C556B005E73F1 /* RGSliderViewController.m in Sources */,
+				A1AAD1361A1C5D61005E73F1 /* RGLeftViewController.m in Sources */,
+				A1AAD13C1A1C5D7F005E73F1 /* RGSecondTopViewController.m in Sources */,
 				A1AAD10E1A1C54C9005E73F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

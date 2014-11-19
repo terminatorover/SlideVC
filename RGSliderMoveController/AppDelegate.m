@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RGSliderViewController.h"
+#import "RGLeftViewController.h"
+#import "RGFirstTopViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    CGRect windowFrame = [UIScreen mainScreen].bounds;
+    self.window = [[UIWindow alloc]initWithFrame:windowFrame];
+    
+    RGLeftViewController *leftVC = [[RGLeftViewController alloc]init];
+    leftVC.view.backgroundColor = [UIColor blueColor];
+    
+    RGFirstTopViewController *firstVC = [[RGFirstTopViewController alloc]init];
+    firstVC.view.backgroundColor = [UIColor redColor];
+    
+    RGSliderViewController *sliderVC = [[RGSliderViewController alloc]initWithLeftViewController:leftVC
+                                                                               topViewController:firstVC];
+    
+    self.window.rootViewController = sliderVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
