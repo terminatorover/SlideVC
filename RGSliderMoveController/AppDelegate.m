@@ -10,6 +10,7 @@
 #import "RGSliderViewController.h"
 #import "RGLeftViewController.h"
 #import "RGFirstTopViewController.h"
+#import "RGSecondTopViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -26,7 +27,7 @@
                                                                         bundle:nil];
  
     
-    RGFirstTopViewController *firstVC = [[RGFirstTopViewController alloc]initWithNibName:@"secondVC" bundle:nil];
+    RGSecondTopViewController *firstVC = [[RGSecondTopViewController alloc]initWithNibName:@"secondVC" bundle:nil];
     firstVC.view.backgroundColor = [UIColor redColor];
     
     RGSliderViewController *sliderVC = [[RGSliderViewController alloc]initWithLeftViewController:leftVC

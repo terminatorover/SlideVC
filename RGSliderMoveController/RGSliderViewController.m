@@ -30,6 +30,7 @@
     [self addChildViewController:leftViewController];
     leftViewController.view.frame = self.view.bounds;
     [self.view addSubview:leftViewController.view];
+    [leftViewController didMoveToParentViewController:self];
     //-------
     [self addViewController:topViewController];
     
@@ -52,7 +53,7 @@
     [self addChildViewController:viewController];
     viewController.view.frame = self.view.bounds;
     [self.topView addSubview:viewController.view];
-    [viewController didMoveToParentViewController:viewController];
+    [viewController didMoveToParentViewController:self];
 }
 
 
