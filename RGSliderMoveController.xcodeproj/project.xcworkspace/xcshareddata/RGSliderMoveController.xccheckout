@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AA19B167-495C-45C3-9870-8E9BDF195387</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RGSliderMoveController</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F2076A4B4CE5599DCAF2847E0FA6DF315FC9649C</key>
+		<string>https://github.com/terminatorover/SlideVC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RGSliderMoveController.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F2076A4B4CE5599DCAF2847E0FA6DF315FC9649C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/terminatorover/SlideVC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F2076A4B4CE5599DCAF2847E0FA6DF315FC9649C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F2076A4B4CE5599DCAF2847E0FA6DF315FC9649C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RGSliderMoveController</string>
+		</dict>
+	</array>
+</dict>
+</plist>

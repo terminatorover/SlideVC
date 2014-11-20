@@ -7,6 +7,8 @@
 //
 
 #import "RGLeftViewController.h"
+#import "RGSliderViewController.h"
+#import "RGSecondTopViewController.h"
 
 @interface RGLeftViewController ()
 
@@ -17,12 +19,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIButton *topButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 300, 50)];
+    topButton.backgroundColor = [UIColor grayColor];
+    [topButton addTarget:self action:@selector(check) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:topButton];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-  (void)check
+{
+    NSLog(@"CHECK ");
+}
+- (IBAction)buttonPressed:(id)sender
+{
+    
+}
+
+
 
 /*
 #pragma mark - Navigation

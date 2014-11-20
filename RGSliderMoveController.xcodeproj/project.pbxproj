@@ -18,6 +18,8 @@
 		A1AAD1361A1C5D61005E73F1 /* RGLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD1351A1C5D61005E73F1 /* RGLeftViewController.m */; };
 		A1AAD1391A1C5D75005E73F1 /* RGFirstTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD1381A1C5D75005E73F1 /* RGFirstTopViewController.m */; };
 		A1AAD13C1A1C5D7F005E73F1 /* RGSecondTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AAD13B1A1C5D7F005E73F1 /* RGSecondTopViewController.m */; };
+		A1AAD1411A1D709A005E73F1 /* firstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AAD1401A1D709A005E73F1 /* firstVC.xib */; };
+		A1AAD1431A1D70A4005E73F1 /* secondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AAD1421A1D70A4005E73F1 /* secondVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		A1AAD1381A1C5D75005E73F1 /* RGFirstTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGFirstTopViewController.m; sourceTree = "<group>"; };
 		A1AAD13A1A1C5D7F005E73F1 /* RGSecondTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGSecondTopViewController.h; sourceTree = "<group>"; };
 		A1AAD13B1A1C5D7F005E73F1 /* RGSecondTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGSecondTopViewController.m; sourceTree = "<group>"; };
+		A1AAD1401A1D709A005E73F1 /* firstVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = firstVC.xib; sourceTree = "<group>"; };
+		A1AAD1421A1D70A4005E73F1 /* secondVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = secondVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 		A1AAD0FF1A1C54C9005E73F1 = {
 			isa = PBXGroup;
 			children = (
+				A1AAD1401A1D709A005E73F1 /* firstVC.xib */,
+				A1AAD1421A1D70A4005E73F1 /* secondVC.xib */,
 				A1AAD10A1A1C54C9005E73F1 /* RGSliderMoveController */,
 				A1AAD1241A1C54C9005E73F1 /* RGSliderMoveControllerTests */,
 				A1AAD1091A1C54C9005E73F1 /* Products */,
@@ -219,7 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AAD1431A1D70A4005E73F1 /* secondVC.xib in Resources */,
 				A1AAD1171A1C54C9005E73F1 /* Main.storyboard in Resources */,
+				A1AAD1411A1D709A005E73F1 /* firstVC.xib in Resources */,
 				A1AAD11C1A1C54C9005E73F1 /* LaunchScreen.xib in Resources */,
 				A1AAD1191A1C54C9005E73F1 /* Images.xcassets in Resources */,
 			);
@@ -372,6 +380,7 @@
 				INFOPLIST_FILE = RGSliderMoveController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -382,6 +391,7 @@
 				INFOPLIST_FILE = RGSliderMoveController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -438,6 +448,7 @@
 				A1AAD12D1A1C54C9005E73F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1AAD12E1A1C54C9005E73F1 /* Build configuration list for PBXNativeTarget "RGSliderMoveControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +457,7 @@
 				A1AAD1301A1C54C9005E73F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

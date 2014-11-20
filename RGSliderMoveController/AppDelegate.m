@@ -22,10 +22,11 @@
     CGRect windowFrame = [UIScreen mainScreen].bounds;
     self.window = [[UIWindow alloc]initWithFrame:windowFrame];
     
-    RGLeftViewController *leftVC = [[RGLeftViewController alloc]init];
-    leftVC.view.backgroundColor = [UIColor blueColor];
+    RGLeftViewController *leftVC = [[RGLeftViewController alloc]initWithNibName:@"firstVC"
+                                                                        bundle:nil];
+ 
     
-    RGFirstTopViewController *firstVC = [[RGFirstTopViewController alloc]init];
+    RGFirstTopViewController *firstVC = [[RGFirstTopViewController alloc]initWithNibName:@"secondVC" bundle:nil];
     firstVC.view.backgroundColor = [UIColor redColor];
     
     RGSliderViewController *sliderVC = [[RGSliderViewController alloc]initWithLeftViewController:leftVC

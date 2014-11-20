@@ -15,6 +15,7 @@
 @implementation RGSliderViewController
 {
     CGPoint currentViewLocation;
+    BOOL moveRight;
 }
 
 - (instancetype)initWithLeftViewController:(UIViewController *)leftViewController   topViewController:(UIViewController *)topViewController
@@ -90,13 +91,29 @@
     CGFloat xMovement = touchLocation.x;
     if(panGestureRecognizer.state == UIGestureRecognizerStateBegan)
     {
-        
+        NSLog(@"%@",NSStringFromCGPoint(touchLocation));
+        if(self.topView.frame.origin.x > self.topView.frame.size.width/2)
+        {
+            moveRight = YES;
+        }
+        else
+        {
+            moveRight = NO;
+        }
     }
     if(panGestureRecognizer.state == UIGestureRecognizerStateChanged)
     {
-        if(xMovement >  self.topView.frame.size.width /2 )
+        if(moveRight)
         {
-            xMovement = self.topView.frame.size.width /2;
+            if(xMovement > 0 )
+            {
+                xMovement = 0;
+            }
+        }
+        
+        if(self.topView.frame.origin.x < 0)
+        {
+            xMovement = 0 ;
         }
         CGPoint move = CGPointMake(xMovement, 0);
         CGRect newFrame = CGRectMake(self.topView.frame.origin.x + move.x,0 , self.topView.frame.size.width, self.topView.frame.size.height);
@@ -107,17 +124,39 @@
     
     if(panGestureRecognizer.state == UIGestureRecognizerStateEnded)
     {
-        [UIView animateWithDuration:.5
-                              delay:.1
-             usingSpringWithDamping:4
-              initialSpringVelocity:10
-                            options:UIViewAnimationOptionAllowUserInteraction
-                         animations:^{
-                             self.topView.frame = self.view.bounds;
-                         }
-                         completion:^(BOOL finished) {
-                             
-                         }];
+        if(self.topView.frame.origin.x > self.topView.frame.size.width / 2)
+        {
+            [UIView animateWithDuration:2
+                                  delay:.1
+                 usingSpringWithDamping:.8
+                  initialSpringVelocity:5
+                                options:UIViewAnimationOptionAllowUserInteraction
+                             animations:^{
+                                 CGRect mainViewFrame  = self.view.bounds;
+                                 CGRect newViewFrame = CGRectMake(mainViewFrame.size.width /2, 0, mainViewFrame.size.width, mainViewFrame.size.height);
+                                 self.topView.frame = newViewFrame;
+                                 
+                             }
+                             completion:^(BOOL finished) {
+                                 
+                             }];
+        }
+        else
+        {
+            [UIView animateWithDuration:2
+                                  delay:.1
+                 usingSpringWithDamping:.8
+                  initialSpringVelocity:5
+                                options:UIViewAnimationOptionAllowUserInteraction
+                             animations:^{
+                                 self.topView.frame = self.view.bounds;
+                                 
+                             }
+                             completion:^(BOOL finished) {
+                                 
+                             }];
+        }
+        
 
     }
 

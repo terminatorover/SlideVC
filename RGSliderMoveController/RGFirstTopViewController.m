@@ -7,16 +7,20 @@
 //
 
 #import "RGFirstTopViewController.h"
-
+#import "RGSliderViewController.h"
+#import "RGSecondTopViewController.h"
 @interface RGFirstTopViewController ()
 
 @end
 
 @implementation RGFirstTopViewController
-
+{
+    RGSecondTopViewController   *sVC;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    ;
 }
 
 - (void)didReceiveMemoryWarning {
