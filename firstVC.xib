@@ -10,96 +10,41 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view tag="53" contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bX-wc-fsc">
-                    <rect key="frame" x="0.0" y="95" width="363" height="46"/>
-                    <color key="backgroundColor" red="0.72779605263157898" green="0.19351356907894737" blue="0.064119037828947373" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button 1">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Pgm-7i-69z"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dA-h8-Hna">
-                    <rect key="frame" x="0.0" y="143" width="363" height="46"/>
+                <button opaque="NO" tag="52" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dA-h8-Hna">
+                    <rect key="frame" x="0.0" y="143" width="171" height="46"/>
                     <color key="backgroundColor" red="0.72779605260000002" green="0.1935135691" blue="0.064119037830000003" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button 2">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="gOb-7v-m3q"/>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="QWR-7s-vX9"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwI-oU-Gd4">
-                    <rect key="frame" x="0.0" y="191" width="363" height="46"/>
+                <button opaque="NO" tag="53" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GB-kQ-Iul">
+                    <rect key="frame" x="0.0" y="191" width="171" height="46"/>
                     <color key="backgroundColor" red="0.72779605260000002" green="0.1935135691" blue="0.064119037830000003" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button 3">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="mp8-QF-GBY"/>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="HaL-hq-QeF"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVd-un-4Al">
-                    <rect key="frame" x="0.0" y="238" width="363" height="46"/>
+                <button opaque="NO" tag="51" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBj-aJ-dqG">
+                    <rect key="frame" x="0.0" y="95" width="171" height="46"/>
                     <color key="backgroundColor" red="0.72779605260000002" green="0.1935135691" blue="0.064119037830000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button 4">
+                    <state key="normal" title="Button 1">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Qkn-6u-kGU"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFs-Ny-E95">
-                    <rect key="frame" x="0.0" y="286" width="363" height="46"/>
-                    <color key="backgroundColor" red="0.72779605260000002" green="0.1935135691" blue="0.064119037830000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button 5">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="jNI-tg-Abo"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vf-4W-iWI">
-                    <rect key="frame" x="0.0" y="334" width="363" height="46"/>
-                    <color key="backgroundColor" red="0.72779605260000002" green="0.1935135691" blue="0.064119037830000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button 6">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="huz-Jq-9qQ"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKY-dX-81E">
-                    <rect key="frame" x="0.0" y="429" width="363" height="46"/>
-                    <color key="backgroundColor" red="0.72779605260000002" green="0.1935135691" blue="0.064119037830000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button 8">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="avb-u9-4tL"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="627-Qs-gqg">
-                    <rect key="frame" x="0.0" y="381" width="363" height="46"/>
-                    <color key="backgroundColor" red="0.72779605260000002" green="0.1935135691" blue="0.064119037830000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button 7">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="W4e-uY-223"/>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="yUk-Yb-Yqj"/>
                     </connections>
                 </button>
             </subviews>

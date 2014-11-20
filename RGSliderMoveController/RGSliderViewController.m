@@ -29,6 +29,8 @@
     [leftViewController willMoveToParentViewController:self];
     [self addChildViewController:leftViewController];
     leftViewController.view.frame = self.view.bounds;
+
+    
     [self.view addSubview:leftViewController.view];
     [leftViewController didMoveToParentViewController:self];
     //-------
@@ -42,12 +44,14 @@
 {
     //------Remove the Current View and View Controller first
     UIViewController *topVC = [self topViewController];
-    [topVC willMoveToParentViewController:nil];
-    UIView *viewInsideTopView =   [self.topView subviews].firstObject;
-    [viewInsideTopView removeFromSuperview];
-    [topVC removeFromParentViewController];
-    
-    
+    if(topVC)
+    {
+        [topVC willMoveToParentViewController:nil];
+        UIView *viewInsideTopView =   [self.topView subviews].firstObject;
+        [viewInsideTopView removeFromSuperview];
+        [topVC removeFromParentViewController];
+    }
+
     //---------------- Add the Top VC
     [viewController willMoveToParentViewController:self];
     [self addChildViewController:viewController];
@@ -59,7 +63,12 @@
 
 - (UIViewController *)topViewController
 {
-    return  [self childViewControllers].lastObject;
+    NSArray *children =  self.childViewControllers;
+    if(children.count == 1)
+    {
+        return nil;
+    }
+    return children.lastObject;
 }
 
 - (void)viewDidLoad {

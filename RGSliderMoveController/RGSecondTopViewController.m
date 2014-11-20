@@ -7,7 +7,7 @@
 //
 
 #import "RGSecondTopViewController.h"
-
+#import "RGSliderViewController.h"
 @interface RGSecondTopViewController ()
 
 @end
@@ -26,7 +26,9 @@
 }
 - (IBAction)buttonTapped:(id)sender
 {
-    NSLog(@"String");
+     RGSliderViewController *parentVC =    self.sliderViewController ;
+     NSArray *children =    parentVC.childViewControllers;
+    
 }
 
 /*

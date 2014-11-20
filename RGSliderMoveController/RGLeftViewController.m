@@ -10,6 +10,13 @@
 #import "RGSliderViewController.h"
 #import "RGSecondTopViewController.h"
 
+typedef enum {
+    BUTTON1 = 51,
+    BUTTON2,
+    BUTTON3,
+} VC_CHOICES;
+
+
 @interface RGLeftViewController ()
 
 @end
@@ -30,9 +37,36 @@
 }
 
 
-- (IBAction)buttonPressed:(id)sender
+- (IBAction)buttonPressed:(UIButton * )sender
 {
-    
+    RGSliderViewController *parentVC =    self.sliderViewController ;
+    NSArray *children =    parentVC.childViewControllers;
+    NSLog(@"Tag: %d",sender.tag);
+    switch (sender.tag) {
+        case BUTTON1:
+        {
+            UIViewController *firstVC =[[UIViewController alloc]init];
+            firstVC.view.backgroundColor = [UIColor grayColor];
+            [self.sliderViewController addViewController:firstVC];
+        }
+            break;
+        case BUTTON2:
+        {
+            UIViewController *secondVC =[[UIViewController alloc]init];
+            secondVC.view.backgroundColor = [UIColor blueColor];
+            [self.sliderViewController addViewController:secondVC];
+        }
+            break;
+            
+        case BUTTON3:
+        {
+            UIViewController *thirdVC =[[UIViewController alloc]init];
+            thirdVC.view.backgroundColor = [UIColor redColor];
+            [self.sliderViewController addViewController:thirdVC];
+        }
+            break;
+
+    }
 }
 
 
