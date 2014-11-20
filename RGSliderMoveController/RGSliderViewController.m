@@ -16,6 +16,7 @@
 {
     CGPoint currentViewLocation;
     BOOL moveRight;
+    RGLeftViewController *leftVC;
 }
 
 - (instancetype)initWithLeftViewController:(UIViewController *)leftViewController   topViewController:(UIViewController *)topViewController
@@ -101,9 +102,10 @@
 {
     CGPoint touchLocation = [panGestureRecognizer translationInView:self.topView];
     CGFloat xMovement = touchLocation.x;
+    RGLeftViewController *leftVC = [self leftSheet];
     if(panGestureRecognizer.state == UIGestureRecognizerStateBegan)
     {
-        NSLog(@"%@",NSStringFromCGPoint(touchLocation));
+//        NSLog(@"%@",NSStringFromCGPoint(touchLocation));
         if(self.topView.frame.origin.x > self.topView.frame.size.width/2)
         {
             moveRight = YES;
@@ -115,6 +117,11 @@
     }
     if(panGestureRecognizer.state == UIGestureRecognizerStateChanged)
     {
+//        CGFloat fraction = abs(self.topView.frame.origin.x) / (self.view.frame.size.width/1.2);
+        CGFloat fraction =  self.topView.frame.size.width  / abs(self.topView.frame.origin.x);
+        NSLog(@"%f",fraction);
+        
+        leftVC.view.transform =  CGAffineTransformMakeScale(fraction, fraction);
         if(moveRight)
         {
             if(xMovement > 0 )
@@ -122,7 +129,6 @@
                 xMovement = 0;
             }
         }
-        
         if(self.topView.frame.origin.x < 0)
         {
             xMovement = 0 ;
@@ -136,6 +142,7 @@
     
     if(panGestureRecognizer.state == UIGestureRecognizerStateEnded)
     {
+        leftVC.view.transform = CGAffineTransformIdentity;
         if(self.topView.frame.origin.x > self.topView.frame.size.width / 2)
         {
             [UIView animateWithDuration:2
@@ -202,6 +209,16 @@
                      }];
 }
 
+
+- (RGLeftViewController *)leftSheet
+{
+    if(!leftVC)
+    {
+        NSArray *childViewControllers = self.childViewControllers;
+        leftVC = childViewControllers.firstObject;
+    }
+    return leftVC;
+}
 @end
 
 
