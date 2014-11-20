@@ -10,4 +10,11 @@
 
 @interface RGLeftViewController : UIViewController
 
+@property id delegate;
+@end
+
+@protocol RGLeftViewController <NSObject>
+
+- (void)toggleTopView;
+
 @end

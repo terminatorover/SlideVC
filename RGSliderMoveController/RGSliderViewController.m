@@ -7,8 +7,8 @@
 //
 
 #import "RGSliderViewController.h"
-
-@interface RGSliderViewController ()
+#import "RGLeftViewController.h"
+@interface RGSliderViewController () <RGLeftViewController>
 @property (nonatomic) UIView *topView;
 @end
 
@@ -26,10 +26,12 @@
         return nil;
     }
     //-------Left VC
+
     [leftViewController willMoveToParentViewController:self];
     [self addChildViewController:leftViewController];
     leftViewController.view.frame = self.view.bounds;
-
+    RGLeftViewController *lvc = (RGLeftViewController *)leftViewController;
+    lvc.delegate = self;
     
     [self.view addSubview:leftViewController.view];
     [leftViewController didMoveToParentViewController:self];
@@ -182,6 +184,23 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - RGLeftViewController Delegate Call Back
+- (void)toggleTopView
+{
+    [UIView animateWithDuration:2
+                          delay:.1
+         usingSpringWithDamping:.8
+          initialSpringVelocity:5
+                        options:UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
+                         self.topView.frame = self.view.bounds;
+                         
+                     }
+                     completion:^(BOOL finished) {
+                         
+                     }];
+}
 
 @end
 

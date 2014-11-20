@@ -48,6 +48,7 @@ typedef enum {
             UIViewController *firstVC =[[UIViewController alloc]init];
             firstVC.view.backgroundColor = [UIColor grayColor];
             [self.sliderViewController addViewController:firstVC];
+            [self toggleBack];
         }
             break;
         case BUTTON2:
@@ -55,6 +56,7 @@ typedef enum {
             UIViewController *secondVC =[[UIViewController alloc]init];
             secondVC.view.backgroundColor = [UIColor blueColor];
             [self.sliderViewController addViewController:secondVC];
+            [self toggleBack];
         }
             break;
             
@@ -63,13 +65,20 @@ typedef enum {
             UIViewController *thirdVC =[[UIViewController alloc]init];
             thirdVC.view.backgroundColor = [UIColor redColor];
             [self.sliderViewController addViewController:thirdVC];
+            [self toggleBack];
         }
             break;
 
     }
 }
 
-
+- (void)toggleBack
+{
+    if(_delegate || [_delegate respondsToSelector:@selector(toggleTopView)])
+    {
+        [_delegate toggleTopView];
+    }
+}
 
 /*
 #pragma mark - Navigation
