@@ -74,7 +74,7 @@ typedef enum {
 
 - (void)toggleBack
 {
-    if(_delegate || [_delegate respondsToSelector:@selector(toggleTopView)])
+    if(_delegate && [_delegate respondsToSelector:@selector(toggleTopView)])
     {
         [_delegate toggleTopView];
     }
